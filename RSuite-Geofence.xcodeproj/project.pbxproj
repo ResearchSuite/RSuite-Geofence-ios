@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CFDD25D71F01782500196692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD25D61F01782500196692 /* AppDelegate.swift */; };
+		CFDD25D91F01782500196692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD25D81F01782500196692 /* ViewController.swift */; };
+		CFDD25DC1F01782500196692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDD25DA1F01782500196692 /* Main.storyboard */; };
+		CFDD25DF1F01782500196692 /* RSuite_Geofence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CFDD25DD1F01782500196692 /* RSuite_Geofence.xcdatamodeld */; };
+		CFDD25E11F01782500196692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFDD25E01F01782500196692 /* Assets.xcassets */; };
+		CFDD25E41F01782500196692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFDD25E21F01782500196692 /* LaunchScreen.storyboard */; };
+		CFDD25EF1F01782500196692 /* RSuite_GeofenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFDD25EE1F01782500196692 /* RSuite_GeofenceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CFDD25EB1F01782500196692 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CFDD25CB1F01782500196692 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFDD25D21F01782500196692;
+			remoteInfo = "RSuite-Geofence";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CFDD25D31F01782500196692 /* RSuite-Geofence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RSuite-Geofence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDD25D61F01782500196692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CFDD25D81F01782500196692 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CFDD25DB1F01782500196692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CFDD25DE1F01782500196692 /* RSuite_Geofence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSuite_Geofence.xcdatamodel; sourceTree = "<group>"; };
+		CFDD25E01F01782500196692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CFDD25E31F01782500196692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CFDD25E51F01782500196692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFDD25EA1F01782500196692 /* RSuite-GeofenceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RSuite-GeofenceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFDD25EE1F01782500196692 /* RSuite_GeofenceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RSuite_GeofenceTests.swift; sourceTree = "<group>"; };
+		CFDD25F01F01782500196692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CFDD25D01F01782500196692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDD25E71F01782500196692 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CFDD25CA1F01782500196692 = {
+			isa = PBXGroup;
+			children = (
+				CFDD25D51F01782500196692 /* RSuite-Geofence */,
+				CFDD25ED1F01782500196692 /* RSuite-GeofenceTests */,
+				CFDD25D41F01782500196692 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CFDD25D41F01782500196692 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CFDD25D31F01782500196692 /* RSuite-Geofence.app */,
+				CFDD25EA1F01782500196692 /* RSuite-GeofenceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CFDD25D51F01782500196692 /* RSuite-Geofence */ = {
+			isa = PBXGroup;
+			children = (
+				CFDD25D61F01782500196692 /* AppDelegate.swift */,
+				CFDD25D81F01782500196692 /* ViewController.swift */,
+				CFDD25DA1F01782500196692 /* Main.storyboard */,
+				CFDD25E01F01782500196692 /* Assets.xcassets */,
+				CFDD25E21F01782500196692 /* LaunchScreen.storyboard */,
+				CFDD25E51F01782500196692 /* Info.plist */,
+				CFDD25DD1F01782500196692 /* RSuite_Geofence.xcdatamodeld */,
+			);
+			path = "RSuite-Geofence";
+			sourceTree = "<group>";
+		};
+		CFDD25ED1F01782500196692 /* RSuite-GeofenceTests */ = {
+			isa = PBXGroup;
+			children = (
+				CFDD25EE1F01782500196692 /* RSuite_GeofenceTests.swift */,
+				CFDD25F01F01782500196692 /* Info.plist */,
+			);
+			path = "RSuite-GeofenceTests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CFDD25D21F01782500196692 /* RSuite-Geofence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFDD25F31F01782500196692 /* Build configuration list for PBXNativeTarget "RSuite-Geofence" */;
+			buildPhases = (
+				CFDD25CF1F01782500196692 /* Sources */,
+				CFDD25D01F01782500196692 /* Frameworks */,
+				CFDD25D11F01782500196692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RSuite-Geofence";
+			productName = "RSuite-Geofence";
+			productReference = CFDD25D31F01782500196692 /* RSuite-Geofence.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CFDD25E91F01782500196692 /* RSuite-GeofenceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFDD25F61F01782500196692 /* Build configuration list for PBXNativeTarget "RSuite-GeofenceTests" */;
+			buildPhases = (
+				CFDD25E61F01782500196692 /* Sources */,
+				CFDD25E71F01782500196692 /* Frameworks */,
+				CFDD25E81F01782500196692 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFDD25EC1F01782500196692 /* PBXTargetDependency */,
+			);
+			name = "RSuite-GeofenceTests";
+			productName = "RSuite-GeofenceTests";
+			productReference = CFDD25EA1F01782500196692 /* RSuite-GeofenceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CFDD25CB1F01782500196692 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Christina Tsangouri";
+				TargetAttributes = {
+					CFDD25D21F01782500196692 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					CFDD25E91F01782500196692 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CFDD25D21F01782500196692;
+					};
+				};
+			};
+			buildConfigurationList = CFDD25CE1F01782500196692 /* Build configuration list for PBXProject "RSuite-Geofence" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CFDD25CA1F01782500196692;
+			productRefGroup = CFDD25D41F01782500196692 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CFDD25D21F01782500196692 /* RSuite-Geofence */,
+				CFDD25E91F01782500196692 /* RSuite-GeofenceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CFDD25D11F01782500196692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDD25E41F01782500196692 /* LaunchScreen.storyboard in Resources */,
+				CFDD25E11F01782500196692 /* Assets.xcassets in Resources */,
+				CFDD25DC1F01782500196692 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDD25E81F01782500196692 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CFDD25CF1F01782500196692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDD25D91F01782500196692 /* ViewController.swift in Sources */,
+				CFDD25D71F01782500196692 /* AppDelegate.swift in Sources */,
+				CFDD25DF1F01782500196692 /* RSuite_Geofence.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFDD25E61F01782500196692 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDD25EF1F01782500196692 /* RSuite_GeofenceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CFDD25EC1F01782500196692 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFDD25D21F01782500196692 /* RSuite-Geofence */;
+			targetProxy = CFDD25EB1F01782500196692 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CFDD25DA1F01782500196692 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFDD25DB1F01782500196692 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CFDD25E21F01782500196692 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CFDD25E31F01782500196692 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CFDD25F11F01782500196692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CFDD25F21F01782500196692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CFDD25F41F01782500196692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RSuite-Geofence/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christinatsangouri.RSuite-Geofence";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		CFDD25F51F01782500196692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "RSuite-Geofence/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christinatsangouri.RSuite-Geofence";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		CFDD25F71F01782500196692 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RSuite-GeofenceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christinatsangouri.RSuite-GeofenceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSuite-Geofence.app/RSuite-Geofence";
+			};
+			name = Debug;
+		};
+		CFDD25F81F01782500196692 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "RSuite-GeofenceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.christinatsangouri.RSuite-GeofenceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RSuite-Geofence.app/RSuite-Geofence";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CFDD25CE1F01782500196692 /* Build configuration list for PBXProject "RSuite-Geofence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDD25F11F01782500196692 /* Debug */,
+				CFDD25F21F01782500196692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFDD25F31F01782500196692 /* Build configuration list for PBXNativeTarget "RSuite-Geofence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDD25F41F01782500196692 /* Debug */,
+				CFDD25F51F01782500196692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CFDD25F61F01782500196692 /* Build configuration list for PBXNativeTarget "RSuite-GeofenceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFDD25F71F01782500196692 /* Debug */,
+				CFDD25F81F01782500196692 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CFDD25DD1F01782500196692 /* RSuite_Geofence.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CFDD25DE1F01782500196692 /* RSuite_Geofence.xcdatamodel */,
+			);
+			currentVersion = CFDD25DE1F01782500196692 /* RSuite_Geofence.xcdatamodel */;
+			path = RSuite_Geofence.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CFDD25CB1F01782500196692 /* Project object */;
+}
