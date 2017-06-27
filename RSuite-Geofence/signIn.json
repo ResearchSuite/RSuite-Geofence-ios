@@ -1,0 +1,19 @@
+{
+    "type": "elementList",
+    "identifier": "signIn",
+    "elements": [
+                 {
+                 "identifier": "getting_started_instructions",
+                 "type": "instruction",
+                 "title": "Getting Started",
+                 "text": "First, you're going to need to sign in.\nIn the next step, please provide your Ohmage-OMH credentials."
+                 },
+                 {
+                 "identifier": "OhmageOMHLogin",
+                 "type": "OhmageOMHLogin",
+                 "title": "Sign In",
+                 "text": "Please enter your Ohmage-OMH credentials to sign in."
+                 }
+            
+            ]
+}

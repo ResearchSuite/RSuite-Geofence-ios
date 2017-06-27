@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H9O-eo-VB3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="eN9-aF-4j2">
+            <objects>
+                <viewController id="H9O-eo-VB3" customClass="OnboardingViewController" customModule="RSuite_Geofence" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="REO-NL-Qn0"/>
+                        <viewControllerLayoutGuide type="bottom" id="eM0-zy-G0X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gwF-NS-UjK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXU-vp-EbJ">
+                                <rect key="frame" x="134" y="312" width="106" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="5VO-nd-VsJ"/>
+                                    <constraint firstAttribute="width" constant="106" id="AuO-5D-IR6"/>
+                                </constraints>
+                                <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="signInTapped:" destination="H9O-eo-VB3" eventType="touchUpInside" id="mtT-U2-p5f"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Hi! 👋👋 " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ngd-Bo-H4o">
+                                <rect key="frame" x="112" y="199" width="150" height="59"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="L7J-BV-zlM"/>
+                                    <constraint firstAttribute="width" constant="150" id="RGE-qE-ZEF"/>
+                                </constraints>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ngd-Bo-H4o" firstAttribute="centerX" secondItem="gwF-NS-UjK" secondAttribute="centerX" id="ErY-j3-x7s"/>
+                            <constraint firstItem="UXU-vp-EbJ" firstAttribute="centerX" secondItem="gwF-NS-UjK" secondAttribute="centerX" id="RFp-Yk-e0t"/>
+                            <constraint firstItem="UXU-vp-EbJ" firstAttribute="top" secondItem="Ngd-Bo-H4o" secondAttribute="bottom" constant="54" id="oyq-RH-7R0"/>
+                            <constraint firstItem="UXU-vp-EbJ" firstAttribute="centerY" secondItem="gwF-NS-UjK" secondAttribute="centerY" id="xaX-SD-HTx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="UXU-vp-EbJ" id="dzm-n7-FED"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dcv-jF-P3J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-166" y="-53"/>
+        </scene>
+    </scenes>
+</document>
