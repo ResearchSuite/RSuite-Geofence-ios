@@ -11,6 +11,7 @@ import ResearchKit
 import ResearchSuiteTaskBuilder
 import Gloss
 import ResearchSuiteAppFramework
+import CoreLocation
 
 class ViewController: UIViewController {
     
@@ -23,6 +24,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         self.store = GeofenceStore()
+//        locationManager = CLLocationManager()
+//        locationManager.delegate = self
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        locationManager.startUpdatingLocation()
     }
 
     override func didReceiveMemoryWarning() {

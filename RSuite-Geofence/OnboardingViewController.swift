@@ -10,7 +10,7 @@ import ResearchKit
 import ResearchSuiteTaskBuilder
 import Gloss
 import ResearchSuiteAppFramework
-import UserNotifications
+
 
 class OnboardingViewController: UIViewController {
     
@@ -86,10 +86,11 @@ class OnboardingViewController: UIViewController {
             
                 // work
                 
-                    let resultWork = taskResult.stepResult(forStepIdentifier: "work_location_step")
-                    let locationAnswerWork = resultWork?.firstResult as? ORKLocationQuestionResult
-                    let resultCoordWork = locationAnswerWork?.locationAnswer?.coordinate
-                    let resultDictionaryWork = locationAnswerWork?.locationAnswer?.addressDictionary
+                    var resultWork = taskResult.stepResult(forStepIdentifier: "work_location_step")
+                    var locationAnswerWork = resultWork?.firstResult as? ORKLocationQuestionResult
+                    var resultCoordWork = locationAnswerWork?.locationAnswer?.coordinate
+                    var resultRegionWork = locationAnswerWork?.locationAnswer?.region
+                    var resultDictionaryWork = locationAnswerWork?.locationAnswer?.addressDictionary
                     
                     self?.resultAddressWork = ""
                     var resultAddressPartsWork : [String] = []
@@ -123,15 +124,20 @@ class OnboardingViewController: UIViewController {
                         self?.resultAddressWork = (self?.resultAddressWork)! + i
                     }
                     
-                    self?.store.setValueInState(value: self?.resultAddressWork as! NSSecureCoding, forKey: "work_location")
-                 
+                self?.store.setValueInState(value: self!.resultAddressWork as NSSecureCoding , forKey: "work_location")
+                
+                self?.store.setValueInState(value: resultCoordWork!.latitude as NSSecureCoding, forKey: "work_coordinate_lat")
+                self?.store.setValueInState(value: resultCoordWork!.latitude as NSSecureCoding, forKey: "work_coordinate_long")
+             
+                
                 // home
                 
                
-                    let resultHome = taskResult.stepResult(forStepIdentifier: "home_location_step")
-                    let locationAnswerHome = resultHome?.firstResult as? ORKLocationQuestionResult
-                    let resultCoordHome = locationAnswerHome?.locationAnswer?.coordinate
-                    let resultDictionaryHome = locationAnswerHome?.locationAnswer?.addressDictionary
+                    var resultHome = taskResult.stepResult(forStepIdentifier: "home_location_step")
+                    var locationAnswerHome = resultHome?.firstResult as? ORKLocationQuestionResult
+                    var resultCoordHome = locationAnswerHome?.locationAnswer?.coordinate
+                    var resultRegionHome = locationAnswerHome?.locationAnswer?.region
+                    var resultDictionaryHome = locationAnswerHome?.locationAnswer?.addressDictionary
                     
                     self?.resultAddressHome = ""
                     var resultAddressPartsHome : [String] = []
@@ -164,16 +170,21 @@ class OnboardingViewController: UIViewController {
                     for i in resultAddressPartsHome {
                         self?.resultAddressHome = (self?.resultAddressHome)! + i
                     }
-                    self?.store.setValueInState(value: self?.resultAddressHome as! NSSecureCoding, forKey: "home_location")
                 
                 
+                self?.store.setValueInState(value: self!.resultAddressHome as NSSecureCoding , forKey: "home_location")
                 
-
+                self?.store.setValueInState(value: resultCoordHome!.latitude as NSSecureCoding, forKey: "home_coordinate_lat")
+                self?.store.setValueInState(value: resultCoordHome!.latitude as NSSecureCoding, forKey: "home_coordinate_long")
+                
                 
     
             }
             
+
+            
             self?.dismiss(animated: true,completion: {
+                appDelegate.updateMonitoredRegions(regionChanged: "both")
                 let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
                 let vc = storyboard.instantiateInitialViewController()
                 appDelegate.transition(toRootViewController: vc!, animated: true)
@@ -190,6 +201,8 @@ class OnboardingViewController: UIViewController {
         
         self.present(tvc, animated: true, completion: nil)
     }
+    
+
 
     
 }

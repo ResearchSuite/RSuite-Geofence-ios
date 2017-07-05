@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E31AA9E11BDDCB7D3CEE5D8F078C885B7CB4B87D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E31AA9E11BDDCB7D3CEE5D8F078C885B7CB4B87D" : 9223372036854775807,
+    "0E93932AE268D5F1399B0A9D08CED1088D46C57E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "0806AF13-FC11-445B-BCB8-B3EE85A8B563",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E31AA9E11BDDCB7D3CEE5D8F078C885B7CB4B87D" : "RSuite-Geofence\/",
+    "0E93932AE268D5F1399B0A9D08CED1088D46C57E" : "OhmageOMHSDK-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "RSuite-Geofence",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "RSuite-Geofence.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ResearchSuite\/OhmageOMHSDK-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0E93932AE268D5F1399B0A9D08CED1088D46C57E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ResearchSuite\/RSuite-Geofence-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E31AA9E11BDDCB7D3CEE5D8F078C885B7CB4B87D"
+    }
+  ]
+}

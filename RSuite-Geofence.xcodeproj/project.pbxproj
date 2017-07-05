@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		76E3AEB6DD5AE4B74682ECA2 /* Pods_RSuite_Geofence.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C20FECBE68E5681285BA22B5 /* Pods_RSuite_Geofence.framework */; };
 		87D8E89634C0368F5FC852F4 /* Pods_RSuite_GeofenceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB60237F513156435E88BB99 /* Pods_RSuite_GeofenceTests.framework */; };
+		CF27FCFC1F06C79B00EE1DA2 /* LogicalLocationSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF27FCFB1F06C79B00EE1DA2 /* LogicalLocationSample.swift */; };
 		CF92B9761F01819F002B4B7B /* GeofenceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF92B9751F01819F002B4B7B /* GeofenceStore.swift */; };
 		CF92B9801F018DD3002B4B7B /* OMHClient.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF92B97F1F018DD3002B4B7B /* OMHClient.plist */; };
 		CF92B9821F018FF6002B4B7B /* LocationOnboarding.json in Resources */ = {isa = PBXBuildFile; fileRef = CF92B9811F018FF6002B4B7B /* LocationOnboarding.json */; };
@@ -42,6 +43,7 @@
 		6F519F6D54677CEA7DDD7F8E /* Pods-RSuite-GeofenceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSuite-GeofenceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RSuite-GeofenceTests/Pods-RSuite-GeofenceTests.release.xcconfig"; sourceTree = "<group>"; };
 		C20FECBE68E5681285BA22B5 /* Pods_RSuite_Geofence.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RSuite_Geofence.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D3E3C0A5254654E780119B /* Pods-RSuite-GeofenceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RSuite-GeofenceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RSuite-GeofenceTests/Pods-RSuite-GeofenceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CF27FCFB1F06C79B00EE1DA2 /* LogicalLocationSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicalLocationSample.swift; sourceTree = "<group>"; };
 		CF92B9751F01819F002B4B7B /* GeofenceStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeofenceStore.swift; sourceTree = "<group>"; };
 		CF92B97F1F018DD3002B4B7B /* OMHClient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = OMHClient.plist; sourceTree = SOURCE_ROOT; };
 		CF92B9811F018FF6002B4B7B /* LocationOnboarding.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LocationOnboarding.json; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				CFDD25D81F01782500196692 /* ViewController.swift */,
 				CF92B9851F0192CD002B4B7B /* OnboardingViewController.swift */,
 				CF92B9891F019A7E002B4B7B /* SettingsViewController.swift */,
+				CF27FCFB1F06C79B00EE1DA2 /* LogicalLocationSample.swift */,
 			);
 			path = "RSuite-Geofence";
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 			files = (
 				CFDD25D91F01782500196692 /* ViewController.swift in Sources */,
 				CFDD25D71F01782500196692 /* AppDelegate.swift in Sources */,
+				CF27FCFC1F06C79B00EE1DA2 /* LogicalLocationSample.swift in Sources */,
 				CF92B9761F01819F002B4B7B /* GeofenceStore.swift in Sources */,
 				CF92B98A1F019A7E002B4B7B /* SettingsViewController.swift in Sources */,
 				CF92B9861F0192CD002B4B7B /* OnboardingViewController.swift in Sources */,

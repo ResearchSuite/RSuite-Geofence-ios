@@ -20,6 +20,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     var homeLocationSurvey: RSAFScheduleItem!
     var items: [String] = ["","Reset your Home Location", "","Reset your Work Location","", "Sign out"];
     var resultAddress : String = ""
+    let appDelegate = UIApplication.shared.delegate as? AppDelegate
 
     
     
@@ -43,7 +44,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        var deselectedCell = tableView.cellForRow(at: indexPath)!
+        let deselectedCell = tableView.cellForRow(at: indexPath)!
         deselectedCell.backgroundColor = UIColor.clear
     }
     
@@ -184,10 +185,16 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                         self?.resultAddress = (self?.resultAddress)! + i
                     }
                     
-                    self?.store.setValueInState(value: self?.resultAddress as! NSSecureCoding, forKey: "work_location")
+                    self?.store.setValueInState(value: self!.resultAddress as NSSecureCoding , forKey: "work_location")
+                    
+                    self?.store.setValueInState(value: resultCoord!.latitude as NSSecureCoding, forKey: "work_coordinate_lat")
+                    self?.store.setValueInState(value: resultCoord!.latitude as NSSecureCoding, forKey: "work_coordinate_long")
+                    
                     DispatchQueue.main.async{
                         self?.tableView.reloadData()
                     }
+                    
+                    self?.appDelegate?.updateMonitoredRegions(regionChanged: "work")
                 }
                 
                 if item.identifier == "location_survey_home" {
@@ -227,10 +234,18 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                     for i in resultAddressParts {
                         self?.resultAddress = (self?.resultAddress)! + i
                     }
-                    self?.store.setValueInState(value: self?.resultAddress as! NSSecureCoding, forKey: "home_location")
+                    
+                    self?.store.setValueInState(value: self!.resultAddress as NSSecureCoding , forKey: "home_location")
+                    
+                    self?.store.setValueInState(value: resultCoord!.latitude as NSSecureCoding, forKey: "home_coordinate_lat")
+                    self?.store.setValueInState(value: resultCoord!.latitude as NSSecureCoding, forKey: "home_coordinate_long")
+                    
                     DispatchQueue.main.async{
                         self?.tableView.reloadData()
                     }
+                    
+                    self?.appDelegate?.updateMonitoredRegions(regionChanged: "home")
+
                 }
                 
                 
