@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>OMHBaseURL</key>
-	<string>https://ohmage-omh.smalldata.io/dsu</string>
+	<string>https://ohmagedev.ctsc.med.cornell.edu/dsu</string>
 	<key>OMHClientID</key>
-	<string>yadl-dance</string>
+	<string>research_suite_development_app</string>
 	<key>OMHClientSecret</key>
-	<string>QJGTQL5D9NpvbazzBsUzQwV2VBUabmcLOIWUnQhX0zEGNZnTxSREKGgHVb5XiHWq</string>
+	<string>B2N3hwDembjLYhLwals1UGbiMASRoe0P1ScXzqApg93ddpzrsbf7hD6RRHNRfyA5</string>
 </dict>
 </plist>
