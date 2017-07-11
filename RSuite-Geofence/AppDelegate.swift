@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     var taskBuilder: RSTBTaskBuilder!
     var resultsProcessor: RSRPResultsProcessor!
     var locationManager: CLLocationManager!
-    let distance: NSNumber = 50
+    let distance: NSNumber = 150
     let nameHome: String = "home"
     let nameWork: String = "work"
     var locationRegionHome: CLCircularRegion!
@@ -245,6 +245,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
         
+        NSLog("updated location received")
+        NSLog(String(describing: locations))
+        
         // location updates here
         
       
@@ -295,6 +298,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     
     func updateMonitoredRegions (regionChanged: String) {
         
+        NSLog("start monitoring updated locations")
   
         if(regionChanged == "home"){
             
@@ -320,6 +324,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             self.store.setValueInState(value: locationRegionHome.center.latitude as NSSecureCoding, forKey: "saved_region_lat_home")
             self.store.setValueInState(value: locationRegionHome.center.longitude as NSSecureCoding, forKey: "saved_region_long_home")
             self.store.setValueInState(value: distance.doubleValue as NSSecureCoding, forKey: "saved_region_distance_home")
+            
+            self.locationManager.startMonitoringVisits()
             
             
             
@@ -351,6 +357,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
             self.store.setValueInState(value: locationRegionWork.center.latitude as NSSecureCoding, forKey: "saved_region_lat_work")
             self.store.setValueInState(value: locationRegionWork.center.longitude as NSSecureCoding, forKey: "saved_region_long_work")
             self.store.setValueInState(value: distance.doubleValue as NSSecureCoding, forKey: "saved_region_distance_work")
+            
+            self.locationManager.startMonitoringVisits()
 
             
             
@@ -387,6 +395,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 self.store.setValueInState(value: locationRegionWork.center.latitude as NSSecureCoding, forKey: "saved_region_lat_work")
                 self.store.setValueInState(value: locationRegionWork.center.longitude as NSSecureCoding, forKey: "saved_region_long_work")
                 self.store.setValueInState(value: distance.doubleValue as NSSecureCoding, forKey: "saved_region_distance_work")
+                
+                self.locationManager.startMonitoringVisits()
                 
             }
             
