@@ -250,6 +250,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
         
         // location updates here
         
+        locations.forEach { (location) in
+            let locationSample = LocationSample()
+            locationSample.latitude = location.coordinate.latitude
+            locationSample.longitude = location.coordinate.longitude
+            locationSample.horizontalAccuracy = location.horizontalAccuracy
+            
+            locationSample.acquisitionSourceCreationDateTime = location.timestamp
+            locationSample.acquisitionModality = .Sensed
+            locationSample.acquisitionSourceName = "edu.cornell.tech.foundry.OhmageOMHSDK.Geofence"
+            
+  
+            
+            self.ohmageManager.addDatapoint(datapoint: locationSample, completion: { (error) in
+                
+                debugPrint(error)
+                
+            })
+        }
+        
       
     }
     
