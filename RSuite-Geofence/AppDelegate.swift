@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     var taskBuilder: RSTBTaskBuilder!
     var resultsProcessor: RSRPResultsProcessor!
     var locationManager: CLLocationManager!
-    let distance: NSNumber = 150
+    let distance: NSNumber = 1000
     let nameHome: String = "home"
     let nameWork: String = "work"
     var locationRegionHome: CLCircularRegion!
@@ -244,30 +244,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
     // Location Manager
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]){
+
         
-        NSLog("updated location received")
-        NSLog(String(describing: locations))
-        
-        // location updates here
-        
-        locations.forEach { (location) in
-            let locationSample = LocationSample()
-            locationSample.latitude = location.coordinate.latitude
-            locationSample.longitude = location.coordinate.longitude
-            locationSample.horizontalAccuracy = location.horizontalAccuracy
-            
-            locationSample.acquisitionSourceCreationDateTime = location.timestamp
-            locationSample.acquisitionModality = .Sensed
-            locationSample.acquisitionSourceName = "edu.cornell.tech.foundry.OhmageOMHSDK.Geofence"
-            
-  
-            
-            self.ohmageManager.addDatapoint(datapoint: locationSample, completion: { (error) in
-                
-                debugPrint(error)
-                
-            })
-        }
+//        locations.forEach { (location) in
+//            let locationSample = LocationSample()
+//            locationSample.latitude = location.coordinate.latitude
+//            locationSample.longitude = location.coordinate.longitude
+//            locationSample.horizontalAccuracy = location.horizontalAccuracy
+//            
+//            locationSample.acquisitionSourceCreationDateTime = location.timestamp
+//            locationSample.acquisitionModality = .Sensed
+//            locationSample.acquisitionSourceName = "edu.cornell.tech.foundry.OhmageOMHSDK.Geofence"
+//            
+//  
+//            
+//            self.ohmageManager.addDatapoint(datapoint: locationSample, completion: { (error) in
+//                
+//                debugPrint(error)
+//                
+//            })
+//        }
         
       
     }
@@ -393,8 +389,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, CLLocationManagerDelegate
                 let coordinateHomeLong = self.store.valueInState(forKey: "home_coordinate_long") as! CLLocationDegrees
                 let coordinateHome = CLLocationCoordinate2D(latitude: coordinateHomeLat, longitude: coordinateHomeLong)
                 
+                NSLog("saved home coord: ")
+                NSLog(String(describing: coordinateHomeLat))
+                
                 self.locationRegionHome = CLCircularRegion(center: coordinateHome, radius: distance.doubleValue, identifier: nameHome as String)
                 self.locationManager.startMonitoring(for:locationRegionHome)
+                
+                NSLog("location monitored:")
+                NSLog(String(describing: locationRegionHome))
                 
                 self.store.setValueInState(value: locationRegionHome.center.latitude as NSSecureCoding, forKey: "saved_region_lat_home")
                 self.store.setValueInState(value: locationRegionHome.center.longitude as NSSecureCoding, forKey: "saved_region_long_home")

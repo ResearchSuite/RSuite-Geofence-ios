@@ -188,7 +188,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                     self?.store.setValueInState(value: self!.resultAddress as NSSecureCoding , forKey: "work_location")
                     
                     self?.store.setValueInState(value: resultCoord!.latitude as NSSecureCoding, forKey: "work_coordinate_lat")
-                    self?.store.setValueInState(value: resultCoord!.latitude as NSSecureCoding, forKey: "work_coordinate_long")
+                    self?.store.setValueInState(value: resultCoord!.longitude as NSSecureCoding, forKey: "work_coordinate_long")
                     
                     DispatchQueue.main.async{
                         self?.tableView.reloadData()
@@ -238,7 +238,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
                     self?.store.setValueInState(value: self!.resultAddress as NSSecureCoding , forKey: "home_location")
                     
                     self?.store.setValueInState(value: resultCoord!.latitude as NSSecureCoding, forKey: "home_coordinate_lat")
-                    self?.store.setValueInState(value: resultCoord!.latitude as NSSecureCoding, forKey: "home_coordinate_long")
+                    self?.store.setValueInState(value: resultCoord!.longitude as NSSecureCoding, forKey: "home_coordinate_long")
                     
                     DispatchQueue.main.async{
                         self?.tableView.reloadData()

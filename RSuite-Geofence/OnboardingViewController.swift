@@ -127,7 +127,7 @@ class OnboardingViewController: UIViewController {
                 self?.store.setValueInState(value: self!.resultAddressWork as NSSecureCoding , forKey: "work_location")
                 
                 self?.store.setValueInState(value: resultCoordWork!.latitude as NSSecureCoding, forKey: "work_coordinate_lat")
-                self?.store.setValueInState(value: resultCoordWork!.latitude as NSSecureCoding, forKey: "work_coordinate_long")
+                self?.store.setValueInState(value: resultCoordWork!.longitude as NSSecureCoding, forKey: "work_coordinate_long")
              
                 
                 // home
@@ -175,7 +175,7 @@ class OnboardingViewController: UIViewController {
                 self?.store.setValueInState(value: self!.resultAddressHome as NSSecureCoding , forKey: "home_location")
                 
                 self?.store.setValueInState(value: resultCoordHome!.latitude as NSSecureCoding, forKey: "home_coordinate_lat")
-                self?.store.setValueInState(value: resultCoordHome!.latitude as NSSecureCoding, forKey: "home_coordinate_long")
+                self?.store.setValueInState(value: resultCoordHome!.longitude as NSSecureCoding, forKey: "home_coordinate_long")
                 
                 
     
